@@ -28,3 +28,5 @@ Objective: make social media information more visually attractive to increase th
 2. **Links to Facebook and Instagram**: Increase the font of Facebook and Instragram links, to ensure they stands out.
 
 These changes could encourage users to connect with the Triple Peaks Coffee Shop more often, imporving their visibility in social media.
+
+https://martaperezcoca.github.io/se_project_spots/
