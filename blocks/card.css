@@ -1,0 +1,33 @@
+.card {
+  max-width: 413px;
+}
+
+.card__image {
+  width: 413px;
+  height: 445px;
+  object-fit: cover;
+  border-radius: 3%;
+  display: block;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 12px 0 0;
+}
+
+.card__title {
+  margin: 0;
+  padding: 0;
+}
+.card__like-button {
+  background-image: url(../images/heart.svg);
+  width: 23px;
+  height: 20px;
+  object-fit: cover;
+  border: none;
+  background-color: transparent;
+  opacity: 40%;
+}
