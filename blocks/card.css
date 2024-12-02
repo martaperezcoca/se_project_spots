@@ -23,7 +23,7 @@
   padding: 0;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 }
 .card__like-button {
   background-image: url(../images/heart.svg);
@@ -47,7 +47,7 @@
   .card__title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 1;
   }
 
   .card__content {
