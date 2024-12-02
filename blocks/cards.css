@@ -11,3 +11,13 @@
   justify-content: center;
   gap: 40px 20px;
 }
+
+@media screen and (max-width: 586px) {
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, 288px);
+  }
+
+  .cards__list {
+    gap: 20px;
+  }
+}

@@ -16,3 +16,6 @@
   line-height: 16px;
   opacity: 70%;
 }
+
+@media screen and (max-width: 586px) {
+}
