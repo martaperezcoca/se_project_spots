@@ -1,10 +1,10 @@
-# Triple Peaks Coffee Shop
+# Spots
 
-This is the second project of the Software Engineering program at TripleTen. It was created using HTML and CSS, based on the design brief.
+This is the third project of the Software Engineering program at TripleTen. It was created using HTML, CSS, Figma and Media queries for mobile view.
 
 ## Project Description
 
-**Triple Peaks Coffee Shop** is the webside of a library coffee shop, it was design to allow users to look at the menu, make reservations online, learn, find inspiration by looking at recipies provided by the coffee shop.
+**Spots** is a photography website, it was design to allow users to upload their photographs, and share it with other users. Similar to Instagram, but much better.
 
 ### Project features
 
@@ -12,21 +12,26 @@ This is the second project of the Software Engineering program at TripleTen. It 
 - Flexbox
 - Positioning
 - Flat BEM file structure
-- A custom form
-- CSS animation and transform
+- Grid Layout
+- Responsive Design
+- Media queries
 
 #### Plan on improving the project
 
 While developing this project, I realized that a few changes could make it more attractive and enhance the user experience:
 
-**Contacts section**
+**Sharing Feature**
 
-Objective: make social media information more visually attractive to increase the user engagement. This could be achieved with a few small changes:
+Objective: Enable users to share their favorite pictures with each other to increase visibility, interaction and content sharing. This could be achieved with a few small changes:
 
-1. **Social Media Icons**: Increase the size of the icons and maybe give them some animations to draw the attention of the user.
+**Animated Like Button**
 
-2. **Links to Facebook and Instagram**: Increase the font of Facebook and Instragram links, to ensure they stands out.
+Objective: Make the like button more visual and appealing with some animations, to increase users interactions with each other.
 
-These changes could encourage users to connect with the Triple Peaks Coffee Shop more often, imporving their visibility in social media.
+##### Link to deployed project on GitHub Pages
 
-https://martaperezcoca.github.io/se_project_spots/
+- [Deployment Link](https://martaperezcoca.github.io/se_project_spots/)
+
+###### Link to video
+
+This is the link to a description video of the project:
