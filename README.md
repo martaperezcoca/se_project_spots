@@ -34,4 +34,4 @@ Objective: Make the like button more visual and appealing with some animations, 
 
 ###### Link to video
 
-This is the link to a description video of the project:
+This is the link to a description video of the project
