@@ -4,7 +4,7 @@
 
 .card__image {
   width: 100%;
-  height: 445px;
+  height: 413px;
   object-fit: cover;
   border-radius: 3%;
   display: block;
@@ -41,6 +41,7 @@
 
 .card__like-button:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 @media screen and (max-width: 586px) {
@@ -49,7 +50,6 @@
   }
 
   .card__title {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1;
     max-width: 245px;

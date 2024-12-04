@@ -9,13 +9,9 @@
 .footer__content {
   margin: 0;
   padding: 60px 0;
-  width: 104px;
-  height: 16px;
+  max-width: 104px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   opacity: 70%;
-}
-
-@media screen and (max-width: 586px) {
 }
