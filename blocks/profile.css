@@ -47,6 +47,7 @@
 .profile__edit-button {
   margin-top: auto;
   display: flex;
+  transition: opacity 0.5s linear;
   justify-content: space-between;
   padding: 0;
   width: 107.34px;
