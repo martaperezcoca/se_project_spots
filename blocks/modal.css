@@ -86,7 +86,7 @@
 .modal__close-btn_type_preview {
   background-image: url(../images/Close-Icon-modal.svg);
   top: 80px;
-  right: -52.5px;
+  right: -37px;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -119,7 +119,7 @@
 }
 
 .modal__close-icon {
-  padding: 0;
+  padding-left: 20px;
   margin: 0;
   width: 40px;
   height: 40px;
@@ -173,7 +173,7 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: 586px) {
+@media screen and (max-width: 320px) {
   .modal {
     padding: 0 10px;
   }
@@ -188,7 +188,7 @@
   }
 
   .modal__close-btn {
-    top: 12px;
+    top: 20px;
     margin-right: -20px;
   }
 
@@ -209,12 +209,10 @@
   }
 
   .modal__caption {
+    font-size: 16px;
   }
 
   .modal__image {
     margin-top: 60px;
-  }
-
-  .modal__container_type_preview {
   }
 }

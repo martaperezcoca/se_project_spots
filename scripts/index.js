@@ -62,6 +62,12 @@ function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
 
+const closeButtons = document.querySelectorAll(".modal__close-btn");
+closeButtons.forEach((button) => {
+  const modal = button.closest(".modal");
+  button.addEventListener("click", () => closeModal(modal));
+});
+
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
   profileNameEl.textContent = nameInput.value;
@@ -76,6 +82,8 @@ function handleAddCardSubmit(evt) {
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardEl = getCardElement(inputValues);
   cardsList.prepend(cardEl);
+  evt.target.reset();
+
   closeModal(cardModal);
 }
 
@@ -116,19 +124,9 @@ editModalButton.addEventListener("click", () => {
   descriptionInput.value = profileDescriptionEl.textContent;
   openModal(editModal);
 });
-editModalCloseButton.addEventListener("click", () => {
-  closeModal(editModal);
-});
-
-previewModalCloseButton.addEventListener("click", () => {
-  closeModal(previewModal);
-});
 
 cardModalButton.addEventListener("click", () => {
   openModal(cardModal);
-});
-cardModalCloseButton.addEventListener("click", () => {
-  closeModal(cardModal);
 });
 
 editForm.addEventListener("submit", handleEditProfileSubmit);
