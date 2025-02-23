@@ -156,6 +156,33 @@
   padding: 16px 12px;
 }
 
+.modal__error {
+  color: #ff0000;
+  font-family: "Poppins", Arial;
+  font-weight: 500;
+  size: 16px;
+  line-height: 1.1;
+  min-height: 18px;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal__input_type_error {
+  border: 1px solid #ff0000;
+  background-color: white !important;
+  color: black !important;
+}
+
+.modal__input .modal__input_type_error {
+  border: 2px solid#ff0000;
+  background-color: white !important;
+  color: black !important;
+}
+
+.modal__error-active {
+  visibility: visible;
+}
+
 .modal__submit-btn {
   width: 156px;
   padding: 18px 0;
