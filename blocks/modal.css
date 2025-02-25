@@ -137,7 +137,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 32px;
+  margin-bottom: 0px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1;
@@ -179,8 +179,9 @@
   color: black !important;
 }
 
-.modal__error-active {
+.modal__error_active {
   visibility: visible;
+  margin-bottom: 32px;
 }
 
 .modal__submit-btn {
@@ -198,6 +199,13 @@
 .modal__submit-btn:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.modal__submit-btn_inactive {
+  background-color: #212121;
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 320px) {
@@ -224,11 +232,15 @@
   }
 
   .modal__label {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
   }
 
   .modal__input {
     font-size: 16px;
+  }
+
+  .modal__error_active {
+    margin-bottom: 24px;
   }
 
   .modal__submit-btn {

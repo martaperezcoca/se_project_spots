@@ -25,6 +25,8 @@ const initialCards = [
   },
 ];
 
+const modals = document.querySelectorAll(".modal");
+
 // Profile elements
 const editModalButton = document.querySelector(".profile__edit-button");
 const cardModalButton = document.querySelector(".profile__add-button");
@@ -40,6 +42,7 @@ const descriptionInput = editModal.querySelector("#profile-description-input");
 
 const cardModal = document.querySelector("#add-card-modal");
 const cardForm = cardModal.querySelector(".modal__form");
+const cardSubmitButton = cardModal.querySelector(".modal__submit-btn");
 const cardModalCloseButton = cardModal.querySelector(".modal__close-btn");
 const cardNameInput = cardModal.querySelector("#add-card-name-input");
 const cardLinkInput = cardModal.querySelector("#add-card-link-input");
@@ -56,10 +59,29 @@ const cardTemplate = document.querySelector("#card-template");
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keydown", handleEscapeKey);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEscapeKey);
+}
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
+});
+
+function handleEscapeKey(evt) {
+  if (evt.key === "Escape") {
+    const openModal = document.querySelector(".modal_is-opened");
+    if (openModal) {
+      closeModal(openModal);
+    }
+  }
 }
 
 const closeButtons = document.querySelectorAll(".modal__close-btn");
@@ -83,7 +105,7 @@ function handleAddCardSubmit(evt) {
   const cardEl = getCardElement(inputValues);
   cardsList.prepend(cardEl);
   evt.target.reset();
-
+  disabledButton(cardSubmitButton, settings);
   closeModal(cardModal);
 }
 
@@ -122,6 +144,7 @@ function getCardElement(data) {
 editModalButton.addEventListener("click", () => {
   nameInput.value = profileNameEl.textContent;
   descriptionInput.value = profileDescriptionEl.textContent;
+  resetValidation(editForm, [nameInput, descriptionInput]);
   openModal(editModal);
 });
 
