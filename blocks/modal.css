@@ -37,6 +37,7 @@
   background: transparent;
   width: unset;
   max-width: 80vw;
+  min-width: 288px;
 }
 
 .modal__container {
