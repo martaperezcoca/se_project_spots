@@ -253,5 +253,6 @@
 
   .modal__image {
     margin-top: 60px;
+    max-width: 288px;
   }
 }
